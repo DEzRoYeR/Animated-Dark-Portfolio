@@ -151,6 +151,53 @@ nav .navlinks li a{
     color:#007ced;
     transform: rotate(360deg);
 }
+
+.porto{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    color: #d5d5d5;
+    display: flex;
+    flex-direction: column; /* Susunan vertikal: teks di atas, gambar di bawah */
+    justify-content: flex-start; /* Pastikan elemen tetap di atas */
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    padding: 10px; /* Jarak dari tepi box */
+    width: 400px; /* Lebar box */
+    height: 500px; /* Tinggi box */
+    background-color: #007ced; /* Warna background box */
+    border-radius: 0px 20px 8px 20px;
+    transition: 0.5s; /* Efek transisi saat hover */
+}
+
+.box:hover {
+    -webkit-box-shadow: 12px 10px 34px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 12px 10px 34px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 12px 10px 34px 0px rgba(255, 255, 255, 0.75);
+}
+
+.box img {
+    width: 3 00px; /* Gambar tidak melebihi lebar box */
+    height: 50%; /* Sesuaikan tinggi gambar secara proporsional */
+    aspect-ratio: 16 / 9;
+    margin-top: 10px; /* Jarak antara teks dan gambar */
+    border-radius: 10px; /* Opsional: sudut melengkung pada gambar */
+    object-fit: cover;
+}
+
+.box h1 {
+    margin: 0; /* Hilangkan margin bawaan paragraf */
+    text-align: center; /* Pusatkan teks */
+    font-size: 16px; /* Ukuran teks */
+}
+
+  
 /* Respnosiv design & displaying navbar for small screen */
 @media(max-width:930px)
 {

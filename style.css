@@ -183,12 +183,19 @@ nav .navlinks li a{
 }
 
 .box img {
-    width: 3 00px; /* Gambar tidak melebihi lebar box */
-    height: 50%; /* Sesuaikan tinggi gambar secara proporsional */
+    width: 300px; /* Gambar tidak melebihi lebar box */
+    height: 150; /* Sesuaikan tinggi gambar secara proporsional */
     aspect-ratio: 16 / 9;
-    margin-top: 10px; /* Jarak antara teks dan gambar */
+    margin-top: 20px; /* Jarak antara teks dan gambar */
     border-radius: 10px; /* Opsional: sudut melengkung pada gambar */
     object-fit: cover;
+    transition: 0.5;
+}
+
+.box img:hover{
+    transform: scale(1.1);
+    
+
 }
 
 .box h1 {

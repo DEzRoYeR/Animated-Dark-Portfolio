@@ -164,23 +164,35 @@ nav .navlinks li a{
 
 .box {
     color: #d5d5d5;
+    
     display: flex;
     flex-direction: column; /* Susunan vertikal: teks di atas, gambar di bawah */
     justify-content: flex-start; /* Pastikan elemen tetap di atas */
     align-items: center; /* Pusatkan elemen secara horizontal */
     padding: 10px; /* Jarak dari tepi box */
     width: 400px; /* Lebar box */
-    height: 500px; /* Tinggi box */
+    height: 300px; /* Tinggi box */
     background-color: #007ced; /* Warna background box */
     border-radius: 0px 20px 8px 20px;
+    overflow: hidden; /* Mencegah teks keluar sebelum hover */
+    transition: height 0.5s ease-in-out;
     transition: 0.5s; /* Efek transisi saat hover */
 }
 
 .box:hover {
+    height: 400px;
     -webkit-box-shadow: 12px 10px 34px 0px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: 12px 10px 34px 0px rgba(255, 255, 255, 0.75);
     box-shadow: 12px 10px 34px 0px rgba(255, 255, 255, 0.75);
 }
+
+.box .content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+}    
 
 .box img {
     width: 300px; /* Gambar tidak melebihi lebar box */

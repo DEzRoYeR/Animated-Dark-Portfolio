@@ -167,9 +167,9 @@ nav .navlinks li a{
     justify-content: center;
     align-items: center;
     background-image: url("ssgameufo.png"), url("sspanganova.png");
-    background-size: cover, cover; /* Pastikan keduanya tidak tertimpa */
+    background-size: cover, cover;
     background-repeat: repeat-x, repeat-x;
-    background-position: 0 0, 0 50%; /* Gambar kedua diposisikan di bawah */
+    background-position: 0 0, 0 50%;
     animation: moveBackground 10s linear infinite;
 }
 
